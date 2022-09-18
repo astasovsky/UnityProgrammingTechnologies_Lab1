@@ -1,21 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class FollowPlayerX : MonoBehaviour
 {
     public GameObject plane;
-    private Vector3 offset;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
+    private readonly Vector3 _offset = new Vector3(30, 0, 10);
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        transform.position = plane.transform.position + offset;
+        transform.position = plane.transform.position + _offset;
     }
 }
