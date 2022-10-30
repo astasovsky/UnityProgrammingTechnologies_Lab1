@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class FollowPlayer : MonoBehaviour
 {
-    public GameObject player;
+    [SerializeField] private GameObject player;
 
     private readonly Vector3 _aboveAndBehindOffset = new(0, 5, -7);
     private readonly Vector3 _perspectiveOfDriversSeatOffset = new(0, 2, 1);
